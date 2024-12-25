@@ -1,0 +1,158 @@
+Here’s the project structure for my RCC app project, reflecting the name change and adjusting references to "Halal chicken delivery" to RCC. Everything else remains the same unless specified.
+
+
+---
+
+Backend (Django)
+
+Project Name: rcc
+
+Folder Structure
+
+rcc/
+├── rcc/
+│   ├── __init__.py
+│   ├── settings.py               # Django settings (including DB, authentication, etc.)
+│   ├── urls.py                   # Root URL routing
+│   ├── asgi.py                   # For async features
+│   ├── wsgi.py                   # For deployment
+│   ├── static/                   # Static files (e.g., admin panel CSS/JS)
+│   ├── templates/                # Template files (optional, for email notifications, etc.)
+├── apps/
+│   ├── authentication/           # User management
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── migrations/
+│   │   │   ├── __init__.py
+│   │   ├── models.py             # User model (Owner, Admin, Delivery Guy, Customer)
+│   │   ├── serializers.py        # User serializers (registration, login)
+│   │   ├── tests.py
+│   │   ├── urls.py               # Routes for login, registration
+│   │   ├── views.py              # User-related APIs
+│   ├── products/                 # Product management
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── migrations/
+│   │   │   ├── __init__.py
+│   │   ├── models.py             # RCC products (e.g., items, combos, etc.)
+│   │   ├── serializers.py        # Product serializers
+│   │   ├── tests.py
+│   │   ├── urls.py               # Routes for listing and retrieving products
+│   │   ├── views.py              # Product-related APIs
+│   ├── orders/                   # Order management
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── migrations/
+│   │   │   ├── __init__.py
+│   │   ├── models.py             # Cart, order, and payment models
+│   │   ├── serializers.py        # Order serializers
+│   │   ├── tests.py
+│   │   ├── urls.py               # Routes for managing orders
+│   │   ├── views.py              # Order-related APIs
+│   ├── delivery/                 # Delivery team and location management
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── migrations/
+│   │   │   ├── __init__.py
+│   │   ├── models.py             # Delivery agent and location models
+│   │   ├── serializers.py        # Delivery serializers
+│   │   ├── tests.py
+│   │   ├── urls.py               # Routes for assigning deliveries
+│   │   ├── views.py              # Delivery-related APIs
+│   ├── analytics/                # Admin and owner analytics
+│       ├── __init__.py
+│       ├── views.py              # Sales and performance analytics
+│       ├── urls.py
+├── manage.py                     # Django CLI utility
+├── requirements.txt              # Python dependencies (Django, DRF, Celery, etc.)
+├── README.md                     # Project documentation
+├── .env                          # Environment variables (DB, API keys)
+├── static/
+├── media/                        # Media uploads (e.g., profile pictures)
+
+
+---
+
+Frontend (Expo React Native with Tailwind CSS)
+
+Project Name: RCCApp
+
+Folder Structure
+
+RCCApp/
+├── assets/                      # Static assets (images, icons, fonts)
+│   ├── images/
+│   ├── icons/
+├── src/
+│   ├── components/              # Reusable UI components
+│   │   ├── Button.js            # Custom button component
+│   │   ├── Input.js             # Custom input field
+│   │   ├── ProductCard.js       # Product card for the product page
+│   │   ├── OrderSummary.js      # Order summary widget
+│   │   ├── AddressSelector.js   # Address selector for delivery
+│   ├── navigation/              # App navigation setup
+│   │   ├── BottomTabNavigator.js # Bottom tab navigation (Product, Cart, etc.)
+│   │   ├── StackNavigator.js     # Stack navigation (Login, Register, etc.)
+│   ├── screens/                 # App screens
+│   │   ├── Auth/                # Authentication screens
+│   │   │   ├── LoginScreen.js
+│   │   │   ├── RegisterScreen.js
+│   │   ├── Customer/            # Customer-related screens
+│   │   │   ├── ProductScreen.js # Displays RCC products
+│   │   │   ├── CartScreen.js    # Shopping cart page
+│   │   │   ├── OrderScreen.js   # Place and track orders
+│   │   │   ├── ProfileScreen.js # Edit profile, addresses, etc.
+│   │   │   ├── OrderHistoryScreen.js # Shows previous orders
+│   │   ├── Admin/               # Admin-related screens
+│   │   │   ├── ReceivedOrdersScreen.js
+│   │   │   ├── DeliveryGuyScreen.js
+│   │   │   ├── LocationListScreen.js # List and manage locations
+│   │   │   ├── AnalyticsScreen.js
+│   │   ├── DeliveryGuy/         # Delivery agent-related screens
+│   │       ├── AssignedOrdersScreen.js
+│   ├── services/                # API integration
+│   │   ├── authService.js       # Handles login, registration
+│   │   ├── productService.js    # Fetch products
+│   │   ├── orderService.js      # Manage orders
+│   │   ├── deliveryService.js   # Delivery-related APIs
+│   ├── store/                   # Redux or Context API setup
+│   │   ├── slices/              # Reducers and actions
+│   │   │   ├── authSlice.js
+│   │   │   ├── productSlice.js
+│   │   │   ├── orderSlice.js
+│   ├── styles/                  # TailwindCSS and custom styles
+│   │   ├── tailwind.config.js   # Tailwind configuration
+│   │   ├── globalStyles.js      # Common reusable styles
+│   ├── utils/                   # Utility functions
+│   │   ├── validators.js        # Input validation logic
+│   │   ├── formatters.js        # Format strings, dates, etc.
+│   ├── App.js                   # Main app entry point
+│   ├── index.js                 # React Native entry point
+├── .expo/                       # Expo configuration
+├── package.json                 # Dependencies for the React Native app
+├── yarn.lock / package-lock.json # Lock file for npm or yarn
+├── tailwind.config.js           # TailwindCSS configuration
+
+
+---
+
+Key Features Adjusted for RCC
+
+1. Products: Reflect RCC items (like unique combos, ingredients, or services).
+
+
+2. Admin Screens: Adjusted to manage RCC-specific analytics, locations, and delivery assignments.
+
+
+3. Delivery Features: Tailored for RCC’s logistics and delivery updates.
+
+
+
+
+---
+
+If there are RCC-specific additional features you'd like to include, let me know so I can integrate them into this structure.

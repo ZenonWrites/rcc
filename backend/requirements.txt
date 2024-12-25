@@ -1,0 +1,40 @@
+# Core Django
+Django
+djangorestframework
+django-cors-headers
+
+# Authentication
+django-allauth
+django-rest-auth
+PyJWT
+
+# Database
+psycopg2-binary
+django-postgres-extra
+
+# Async & Channels
+channels
+channels-redis
+
+# Background Tasks
+celery
+redis
+django-celery-beat
+
+# Geolocation
+geopy
+
+# Payment Gateway
+razorpay
+
+# Security & Performance
+django-security
+django-cacheops
+django-defender
+
+# API Documentation
+drf-yasg
+
+# Development & Debugging
+django-debug-toolbar
+ipython

@@ -1,0 +1,24 @@
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    $(document).ready(function() {
+        $('#id_state').change(function() {
+            var stateId = $(this).val();
+            $.ajax({
+                type: 'GET',
+                url: '{% url "cities_by_state" %}',
+                data: {'state_id': stateId},
+                success: function(data) {
+                    $('#id_city').empty();
+                    $.each(data, function(index, value) {
+                        $('#id_city').append('<option value="' + value.id + '">' + value.name + '</option>');
+                    });
+                }
+            });
+        });
+    });
+</script>

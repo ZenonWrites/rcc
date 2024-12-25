@@ -1,0 +1,291 @@
+[
+    {
+      "model": "authentication.state",
+      "pk": 1,
+      "fields": {
+        "name": "Andhra Pradesh",
+        "code": "AP"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 2,
+      "fields": {
+        "name": "Arunachal Pradesh",
+        "code": "AR"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 3,
+      "fields": {
+        "name": "Assam",
+        "code": "AS"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 4,
+      "fields": {
+        "name": "Bihar",
+        "code": "BR"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 5,
+      "fields": {
+        "name": "Chhattisgarh",
+        "code": "CG"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 6,
+      "fields": {
+        "name": "Goa",
+        "code": "GA"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 7,
+      "fields": {
+        "name": "Gujarat",
+        "code": "GJ"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 8,
+      "fields": {
+        "name": "Haryana",
+        "code": "HR"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 9,
+      "fields": {
+        "name": "Himachal Pradesh",
+        "code": "HP"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 10,
+      "fields": {
+        "name": "Jharkhand",
+        "code": "JH"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 11,
+      "fields": {
+        "name": "Karnataka",
+        "code": "KA"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 12,
+      "fields": {
+        "name": "Kerala",
+        "code": "KL"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 13,
+      "fields": {
+        "name": "Madhya Pradesh",
+        "code": "MP"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 14,
+      "fields": {
+        "name": "Maharashtra",
+        "code": "MH"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 15,
+      "fields": {
+        "name": "Manipur",
+        "code": "MN"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 16,
+      "fields": {
+        "name": "Meghalaya",
+        "code": "ML"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 17,
+      "fields": {
+        "name": "Mizoram",
+        "code": "MZ"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 18,
+      "fields": {
+        "name": "Nagaland",
+        "code": "NL"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 19,
+      "fields": {
+        "name": "Odisha",
+        "code": "OD"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 20,
+      "fields": {
+        "name": "Punjab",
+        "code": "PB"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 21,
+      "fields": {
+        "name": "Rajasthan",
+        "code": "RJ"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 22,
+      "fields": {
+        "name": "Sikkim",
+        "code": "SK"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 23,
+      "fields": {
+        "name": "Tamil Nadu",
+        "code": "TN"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 24,
+      "fields": {
+        "name": "Telangana",
+        "code": "TG"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 25,
+      "fields": {
+        "name": "Tripura",
+        "code": "TR"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 26,
+      "fields": {
+        "name": "Uttar Pradesh",
+        "code": "UP"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 27,
+      "fields": {
+        "name": "Uttarakhand",
+        "code": "UK"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 28,
+      "fields": {
+        "name": "West Bengal",
+        "code": "WB"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 29,
+      "fields": {
+        "name": "Delhi",
+        "code": "DL"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 30,
+      "fields": {
+        "name": "Jammu and Kashmir",
+        "code": "JK"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 31,
+      "fields": {
+        "name": "Ladakh",
+        "code": "LA"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 32,
+      "fields": {
+        "name": "Lakshadweep",
+        "code": "LD"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 33,
+      "fields": {
+        "name": "Puducherry",
+        "code": "PY"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 34,
+      "fields": {
+        "name": "Andaman and Nicobar Islands",
+        "code": "AN"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 35,
+      "fields": {
+        "name": "Chandigarh",
+        "code": "CH"
+      }
+    },
+    {
+      "model": "authentication.state",
+      "pk": 36,
+      "fields": {
+        "name": "Dadra and Nagar Haveli and Daman and Diu",
+        "code": "DN"
+      }
+    }
+  ]
+  
